@@ -1,9 +1,12 @@
 import React from "react";
+import { useHistory } from 'react-router-dom'
 import '../style.css'
 
 
 
 function Home () {
+    const history = useHistory();
+   
     return(
         <div>
             <div className='background'>
@@ -16,8 +19,8 @@ function Home () {
             <div className='image-content text-center'>
                 <h1>Welcome to Stasis</h1>
                 <div>
-                    <button className='btn btn-dark mr-3'>Signup</button>
-                    <button className='btn btn-dark'>Log in</button>
+                    <button className='btn btn-dark mr-3' onClick={() => history.push('/signup')}>Signup</button>
+                    <button className='btn btn-dark' onClick={() => history.push('/login')}>Log in</button>
 
                 </div>
             </div>

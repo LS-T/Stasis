@@ -7,6 +7,7 @@ import{
 import './App.css';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
+import Signup from './pages/Signup/index.jsx';
 
 
 
@@ -17,6 +18,7 @@ function App() {
         <NavBar></NavBar>
         <Switch>
           <Route path='/'exact component={Home} />
+          <Route path='/signup' exact component={Signup} />
         </Switch>
       </Router>
     </div>
