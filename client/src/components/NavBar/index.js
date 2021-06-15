@@ -1,23 +1,22 @@
 import React from "react";
-import Container from "../Container";
-import Col from "../Col";
-import Row from "../Row";
+import { Link } from "react-router-dom";
+
 
 function NavBar() {
   return (
-    <Container >
-      <nav className="navbar navbar-dark bg-dark">
-        <Row>
-          <Col size="md-4">
+    
+    <nav className="navbar navbar-dark bg-dark">
             <h1 style={{ color: "white" }}>Stasis</h1>
-          </Col>
-          <Col size="md-8">
-            <a className="navbar-brand">Dashboard</a>
-            <a className="navbar-brand"></a>
-          </Col>
-        </Row>
-      </nav>
-    </Container>
+
+            <Link to="/" className="navbar-brand">
+              Dashboard
+            </Link>
+    </nav>
+    
+      
+     
+      
+   
   );
 }
 export default NavBar;

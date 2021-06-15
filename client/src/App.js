@@ -1,18 +1,24 @@
-import logo from './logo.svg';
+import React from "react";
+import{
+  BrowserRouter as Router,
+  Route,
+  Switch
+} from "react-router-dom";
 import './App.css';
 import NavBar from './components/NavBar';
+import Home from './pages/Home';
+
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar>
-        
-      </NavBar>
-      <div>
-        <p>TEST TEST </p>
-      </div>
-      
+      <Router>
+        <NavBar></NavBar>
+        <Switch>
+          <Route path='/'exact component={Home} />
+        </Switch>
+      </Router>
     </div>
   );
 }
