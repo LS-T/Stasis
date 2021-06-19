@@ -35,7 +35,7 @@ code {
 .wholeBox {
   display:flex;
   justify-content: center;
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(33, 136, 127);
   height: 100vh;
   
 }
