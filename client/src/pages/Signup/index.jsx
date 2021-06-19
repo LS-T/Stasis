@@ -9,7 +9,8 @@ import '../../index.css'
 const BoxContainer = styled.div`
   width: 280px;
   max-height: 550px;
-  margin-top: 100px;
+  margin-top: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
   border-radius: 19px;
