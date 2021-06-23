@@ -26,6 +26,27 @@ const quotesSeed = [
     },
 ];
 
+const usersSeed = [
+    {
+        user_name: "John",
+        password:1234
+    },
+    {
+        user_name: "Haden",
+        password:4321
+    }
+]
+db.Users.remove({})
+    .then(() => db.Users.collection.insertMany(usersSeed))
+    .then(data => {
+        console.log(data.result.n + ' records inserted!');
+        process.exit(0);
+    })
+    .catch((err) => {
+        console.log(err)
+        process.exit(1);
+    })
+
 db.Quotes.remove({})
     .then(() => db.Quotes.collection.insertMany(quotesSeed))
     .then(data => {
