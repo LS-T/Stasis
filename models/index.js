@@ -1,3 +1,4 @@
 module.exports = {
-    Quotes: require('./quotes')
+    Quotes: require('./quotes'),
+    Users: require('./user')
 }
